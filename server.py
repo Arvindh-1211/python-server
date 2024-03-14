@@ -16,10 +16,10 @@ def get_url(url):
     URL = url
     return get_formats(URL)
 
-@app.route('/download/<path:url>')
-def download(url):
-    URL = url
-    down(URL, 'best')
+# @app.route('/download/<path:url>')
+# def download(url):
+#     URL = url
+#     down(URL, 'best')
 
 if __name__ == '__main__':
     app.run(debug = True)
